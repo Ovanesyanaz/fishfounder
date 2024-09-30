@@ -30,7 +30,7 @@ def get_byte(number):
         img_str = base64.b64encode(buffered.getvalue()).decode("ascii")
         return img_str
 
-app = Flask(__name__, static_folder='../server/build', static_url_path='/')
+app = Flask(__name__, static_folder='../client/build', static_url_path='/')
 @app.route("/")
 def index():
     return app.send_static_file('index.html')
