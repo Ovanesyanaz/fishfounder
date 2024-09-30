@@ -45,4 +45,4 @@ def get_not_avalible_entries():
 con.commit()
 con.close()
 
-create_template_db(150)
+create_template_db(4488)
